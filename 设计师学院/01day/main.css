@@ -1,0 +1,47 @@
+html {
+	font-size: 10px;
+}
+div {
+	font-weight: bold;
+	font-family:"arial, helvetica, sans-serif";
+	font-size: 2rem;
+	margin:100px auto;
+	text-align: center;
+	position: relative;
+}
+div span{
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	position: relative;
+}
+div a {
+	color: #000000;
+	font-size: 1.6rem;
+	display: block;
+	width: 86px;
+	text-decoration: none;
+	padding: 5px 0px;
+	border: 1px solid #888;
+	border-radius: 8px;
+	margin: 0 auto;
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	margin-left: -43px;
+}
+div span:after{
+	content: "";
+	width: 0;
+    height: 5px;
+    background: blue;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all .8s;
+} 
+a:hover+span:after {
+	left: 0;
+	width: 100%;
+}
